@@ -43,5 +43,5 @@ else:
 
     for result in results:
 
-        print(str(len(result)) +  f" {result} with " +\
-               str(len(dict.fromkeys(list(result))))  + " distinct letters.")
+        print(f"{result} has length {len(result)} and \
+{str(len(dict.fromkeys(list(result))))} distinct letters.")
