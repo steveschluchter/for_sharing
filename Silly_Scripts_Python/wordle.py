@@ -32,7 +32,7 @@ if len(ordered_letters) != word_length:
 
 for i, letter in enumerate(ordered_letters):
 
-    if letter in "abcdefghijklmnopqrstuvwxyz":
+    if letter in "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSDTUVWXYZ":
 
         ordered_letters[i] = letter.upper()
 
