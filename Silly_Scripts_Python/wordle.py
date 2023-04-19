@@ -58,8 +58,6 @@ candidates = [candidate.strip() for candidate in candidates]
 #This is a constraint specific to wordle.  The word lengths are all 5.
 candidates = [candidate for candidate in candidates if len(candidate) == word_length]
 
-print(candidates)
-
 results = []
 
 
