@@ -7,6 +7,25 @@
 from copy import copy
 import re, sys
 
+def word_score(input_word):
+
+    input_word = dict.fromkeys(list(input_word))
+        
+    score = 0
+
+    letter_frequency_array = ['E','T','A','O','I','N','S',\
+                              'R','H','D','L','U','C','M',\
+                              'F','Y','W','G','P','B','V',\
+                              'K','X','Q', 'J', 'Z']
+
+    input_word_list = list(input_word)
+
+    for letter in input_word_list:
+        
+        score += letter_frequency_array.index(letter)
+
+    return score
+
 print("Welcome to the wordle assistant.")
 
 word_length = int(input("Enter a length of desired word suggestions."))
@@ -95,6 +114,9 @@ for word in candidates:
         continue
 
     results.append(word)
+
+
+results.sort(key=word_score, reverse=False)
 
 
 print("Here are your results.")
