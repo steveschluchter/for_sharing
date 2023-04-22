@@ -22,7 +22,7 @@ def word_score(input_word):
 
     for letter in input_word_list:
         
-        score += letter_frequency_array.index(letter)
+        score += 25 - letter_frequency_array.index(letter)
 
     return score
 
@@ -116,7 +116,7 @@ for word in candidates:
     results.append(word)
 
 
-results.sort(key=word_score, reverse=False)
+results.sort(key=word_score)
 
 
 print("Here are your results.")
