@@ -2,6 +2,7 @@
 
 #This program is designed to help the user with the game wordle.
 #By: Steve Schluchter
+#Date begun: I forgot. :(
 
 from copy import copy
 import re, sys

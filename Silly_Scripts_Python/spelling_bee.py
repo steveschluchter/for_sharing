@@ -2,7 +2,7 @@
 
 #This program looks for words that use the user's letters, and no other letters.
 #Author: Steve Schluchter
-#Date: 15.April.2023
+#Date begun: 15.April.2023
 
 import re
 
