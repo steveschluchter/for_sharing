@@ -22,7 +22,7 @@ def word_score(input_word):
 
     for letter in input_word_list:
         
-        score += 25 - letter_frequency_array.index(letter)
+        score += 26 - letter_frequency_array.index(letter)
 
     return score
 
