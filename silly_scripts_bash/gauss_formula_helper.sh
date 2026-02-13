@@ -15,6 +15,14 @@ read input
   fi
 
 expr $input + $input
+expr $input % 2
+
+if [[ $input%2 -eq 0 ]]; then
+    echo "You entered an even number"
+else
+    echo "You entered an odd number" 
+fi
+
 
 for i in $(seq 1 $input);
 do

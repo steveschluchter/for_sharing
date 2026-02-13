@@ -12,12 +12,24 @@ candidates = words.readlines()
 results = []
 
 user_letters = list(input("Enter your list of included letters. ").upper())
+needed_letters = list(input("Enter the necessary letter(s)").upper())
 
 for word in candidates:
 
     word = word.strip()
 
     test_word = word
+
+    missing_needed_letter = False
+
+    for letter in needed_letters:
+        if letter not in test_word:
+            #print("Your word list has no words that contain all of your necessary letters.")
+            missing_needed_letter = True
+            break
+    
+    if missing_needed_letter:
+        continue
 
     for letter in user_letters:
 
